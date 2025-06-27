@@ -105,3 +105,107 @@
     font-weight: lighter;
     transform: rotate(-10deg);
 }
+
+
+
+
+/****************B L O Q U E 2*****************/
+.formulario {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.leyende {
+    color: #ffff;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.preguntas_form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-transform: capitalize;
+    margin-top: 2rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    column-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .preguntas_form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+}
+
+
+.campos input {
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.campos label:hover,
+.opciones label:hover {
+    cursor: pointer;
+}
+
+
+.campos_radio .opciones {
+    display: flex;
+    justify-content: center;
+
+    column-gap: 2rem;
+    padding: 10px;
+}
+
+.campos_radio .opciones div {
+    display: flex;
+}
+
+* botones */
+.form__buttons {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.form__buttons .container {
+    display: flex;
+    width: 100%;
+}
+
+.form__buttons .container:first-child {
+    justify-content: end;
+}
+
+.form__button {
+    background-color: rgb(255, 162, 255);
+    height: fit-content;
+    border-radius: 10px;
+    /* shadow */
+}
+
+.form__button:hover {
+    background-color: rgb(196, 123, 196);
+}
+
+.form__button input {
+    padding: 1rem 4rem;
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
