@@ -1,4 +1,4 @@
-nav{
+nav {
     background-color: rgb(223, 229, 236);
 }
 
@@ -139,7 +139,6 @@ nav{
 
 
 /****************B L O Q U E 2*****************/
-
 .leyenda {
     color: #333;
     text-align: center;
@@ -148,6 +147,7 @@ nav{
     font-size: 30px;
 }
 
+/*FORMULARIO*/
 .preguntas_form {
     display: flex;
     align-items: center;
@@ -157,12 +157,12 @@ nav{
     font-weight: bold;
 }
 
-.formulario fieldset{
+.formulario fieldset {
     border: none;
     outline: none;
 }
 
-.campos{
+.campos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,7 +181,9 @@ nav{
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(84, 76, 107, 0.874);
 }
-.campos_radio p{
+
+/*OPCIONES SEXO*/
+.campos_radio p {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,12 +191,25 @@ nav{
     margin-bottom: 10px;
     color: brown;
 }
-.campos_radio{
+
+.campos_radio {
     margin-bottom: 65px;
 }
+
 .opciones_sexo {
     display: flex;
     font-size: 20px;
     gap: 8rem;
     margin-left: 15%;
+}
+
+/************************B O T O N E S************/
+.formulario_btn {
+    display: flex;
+    column-gap: 10rem;
+    justify-content: center;
+}
+.btn{
+    border-radius: 10px;
+    font-size: 20px;
 }
