@@ -16,12 +16,13 @@
     font-style: italic;
 }
 
-#apps{
+#apps {
     display: flex;
     gap: 50px;
     margin-right: 80px;
 }
-#apps img{
+
+#apps img {
     width: 50px;
 }
 
@@ -40,7 +41,8 @@
 
 .separador {
     display: flex;
-    flex-direction: column;/*Esto los pone uno encima del otro*/
+    flex-direction: column;
+    /*Esto los pone uno encima del otro*/
     gap: 0.1px;
 }
 
@@ -67,6 +69,7 @@
     justify-content: center;
     border-radius: 50%;
 }
+
 .logo__text {
     font-family: 'Permanent Marker', cursive;
     font-size: 12px;
@@ -81,6 +84,56 @@
 
 
 /************************ B L  O Q U E 2 *********************/
-.contenido{
-    background-color: aquamarine;
+.content {
+    margin-top: 0;
+    display: flex;
+    gap: 20%;
+}
+
+.rotada {
+    perspective: 1000px;
+    /*profundidad 3D */
+    display: inline-block;
+    background-color: red;
+    margin-top: 15px;
+}
+
+.rotada img {
+    width: 250px;
+    transform: rotateY(-30deg) rotateX(5deg) rotateZ(8deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    /* sombra para realce */
+    transition: transform 0.3s ease;
+}
+
+.content h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 40px;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-style: italic;
+}
+
+.content p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.3px;
+    margin-left: 40px;
+    font-weight: 450;
+    font-size: 18px;
+}
+
+.content button {
+    background-color: #eaa7d5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-left: 40px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    border: 5px solid #eaa7d5;
+    box-shadow: 0px 8px 15px #979595 ;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    text-align: center;
+    padding: 5px;
 }
