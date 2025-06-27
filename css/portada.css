@@ -99,7 +99,7 @@
 }
 
 .rotada img {
-    width: 250px;
+    width: 200px;
     transform: rotateY(-30deg) rotateX(5deg) rotateZ(8deg);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     /* sombra para realce */
@@ -130,10 +130,53 @@
     font-size: 25px;
     letter-spacing: 1px;
     border: 5px solid #eaa7d5;
-    box-shadow: 0px 8px 15px #979595 ;
+    box-shadow: 0px 8px 15px #979595;
     border-radius: 5px;
     cursor: pointer;
     color: black;
     text-align: center;
     padding: 5px;
+}
+
+
+
+/**************B L O Q U E 3*************/
+.footer {
+    background-color: rgb(155, 184, 222);
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#descargar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.colum {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.colum img {
+    width: 120px;
+}
+
+.pago1,
+.pago2 {
+    background-color: rgb(237, 235, 239);
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;/* centra las imágenes horizontalmente */
+    gap: 20px;/* espacio entre imágenes */
+    flex-wrap: wrap;
+    margin-left: 80px;
+}
+
+.pago1 img,
+.pago2 img {
+    width: 60px;/* ajusta el tamaño si deseas */
+    height: 30px;
 }
