@@ -1,5 +1,5 @@
 #portada {
-    background: linear-gradient(to right,#020c1e, #020d20, #18095b, #430943);
+    background: linear-gradient(to right, #020c1e, #020d20, #18095b, #430943);
     color: white;
 
 }
@@ -31,6 +31,24 @@
     width: 50px;
 }
 
+#insta,#face,#tiktok  {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+#insta:hover, #face:hover,#tiktok:hover {
+    animation: sacudir 0.6s ease-in-out;
+}
+
+@keyframes sacudir {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(-15deg);}
+    40% {transform: rotate(10deg);}
+    60% {transform: rotate(-10deg);}
+    80% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
+
 
 .btn1 {
     display: flex;
@@ -42,6 +60,12 @@
 .btn1 a {
     text-decoration: none;
     color: white;
+}
+
+.btn1 a:hover{
+    transition: transform 0.3s;
+    transform: scale(1.2);
+    color: #333;
 }
 
 .separador {
@@ -106,7 +130,7 @@
     position: relative;
     border-radius: 40px;
     background: #000;/* carcasa negra */
-    padding: 15px;/* espacio entre imagen y borde */
+    padding: 20px;/* espacio entre imagen y borde */
     box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
     transform: rotateY(-30deg) rotateX(5deg) rotateZ(8deg);
     transition: transform 0.4s ease;
@@ -159,13 +183,19 @@
     margin-left: 40px;
     font-size: 25px;
     letter-spacing: 1px;
-    border: 5px solid #eaa7d5;
-    box-shadow: 0px 8px 15px #979595;
+    border: 2px solid #333;
+    box-shadow: 0px 5px 10px #eaa7d5;
     border-radius: 5px;
-    cursor: pointer;
     color: black;
     text-align: center;
-    padding: 5px;
+    padding: 8px;
+}
+#btn-registro:hover{
+    cursor: pointer;   
+    transition: transform 0.3s;
+    transform: scale(1.1);
+    color: #18095b;
+    font-weight: bold;
 }
 
 
@@ -198,8 +228,10 @@
     background-color: rgb(237, 235, 239);
     border-radius: 10px;
     display: flex;
-    justify-content: space-evenly;/* centra las imágenes horizontalmente */
-    gap: 1px;/* espacio entre imágenes */
+    justify-content: space-evenly;
+    /* centra las imágenes horizontalmente */
+    gap: 1px;
+    /* espacio entre imágenes */
     flex-wrap: wrap;
     width: 100%;
     padding: 20px;
