@@ -5,7 +5,20 @@
 }
 
 .header {
-    background-color: rgb(108, 137, 174);
+    background-image: linear-gradient(to left bottom,
+            #ad4f5f,
+            #c777b9,
+            #ba83ca,
+            #8066ac,
+            #9a9ae1,
+            #7159be,
+            #5b61ad,
+            #6996f8,
+            #5260fe,
+            #414bff,
+            #4f4b9a,
+            #6c4ade
+    );    
     display: flex;
     text-align: center;
     align-items: center;
@@ -31,12 +44,12 @@
     width: 50px;
 }
 
-#insta,#face,#tiktok  {
+.redes{
     transition: transform 0.2s ease;
     cursor: pointer;
 }
 
-#insta:hover, #face:hover,#tiktok:hover {
+.redes:hover {
     animation: sacudir 0.6s ease-in-out;
 }
 
@@ -202,8 +215,20 @@
 
 /**************B L O Q U E 3*************/
 .footer {
-    background-color: rgb(108, 137, 174);
-    margin-top: 10px;
+    background-image: linear-gradient(to left bottom,
+            #d16b7c,
+            #c777b9,
+            #ba83ca,
+            #aa8fd8,
+            #9a9ae1,
+            #a18aec,
+            #7981f4,
+            #6996f8,
+            #5260fe,
+            #414bff,
+            #4f46fa,
+            #715ffb
+    );    margin-top: 10px;
     padding: 10px;
 }
 
