@@ -152,7 +152,7 @@ nav{
     display: flex;
     align-items: center;
     gap: 15rem;
-    margin: 2% 10%;
+    margin: 4% 10%;
     color: #333;
     font-weight: bold;
 }
@@ -162,8 +162,7 @@ nav{
     outline: none;
 }
 
-.campos,
-.campos_radio p {
+.campos{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,7 +181,20 @@ nav{
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(84, 76, 107, 0.874);
 }
-
+.campos_radio p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: brown;
+}
+.campos_radio{
+    margin-bottom: 65px;
+}
 .opciones_sexo {
     display: flex;
+    font-size: 20px;
+    gap: 8rem;
+    margin-left: 15%;
 }

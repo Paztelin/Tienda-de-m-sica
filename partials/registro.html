@@ -4,103 +4,103 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <nav>
-<header>
-    <div id="encabezado">
-        <div id="logos">
-            <div class="volver">
-                <a href="/partials/portada.html"><img class="iconos" src="/img/atras.png" alt="regreso"></a>
-                <a class="atras" href="/partials/portada.html">Atrás</a>
+    <header>
+        <div id="encabezado">
+            <div id="logos">
+                <div class="volver">
+                    <a href="/partials/portada.html"><img class="iconos" src="/img/atras.png" alt="regreso"></a>
+                    <a class="atras" href="/partials/portada.html">Atrás</a>
+                </div>
+                <div class="iniciarSsion">
+                    <img src="/img/insignia.png" alt="sesion">
+                    <a class="texto" href="">Iniciar sesión</a>
+                </div>
             </div>
-            <div class="iniciarSsion">
-                <img src="/img/insignia.png" alt="sesion">
-                <a class="texto" href="">Iniciar sesión</a>
+
+            <!--LOGOS SOCIAL MEDIA-->
+            <div id="apps2">
+                <img class="redes2" src="/img/instagram.png" alt="insta">
+                <img class="redes2" src="/img/facebook.png" alt="fbook">
+                <img class="redes2" src="/img/tik-tok.png" alt="tiktok">
             </div>
         </div>
+    </header>
 
-        <!--LOGOS SOCIAL MEDIA-->
-        <div id="apps2">
-            <img class="redes2" src="/img/instagram.png" alt="insta">
-            <img class="redes2" src="/img/facebook.png" alt="fbook">
-            <img class="redes2" src="/img/tik-tok.png" alt="tiktok">
+
+
+    <!--******************B L O Q U E 2*************-->
+    <main>
+        <!--logo-->
+        <div class="logo2">
+            <h1 class="logo__text2">la nota <br> musical</h1>
         </div>
-    </div>
-</header>
 
 
 
-<!--******************B L O Q U E 2*************-->
-<main>
-    <!--logo-->
-    <div class="logo2">
-        <h1 class="logo__text2">la nota <br> musical</h1>
-    </div>
+        <form class="formulario">
+            <legend class="leyenda">Registrate gratis para escuchar tu música favorita</legend>
 
+            <section class="preguntas_form">
+                <!--correo//contras-->
+                <fieldset>
+                    <div class="campos">
+                        <label for="correo">Correo electrónico</label>
+                        <input id="correo" type="text" placeholder="Correo electrónico">
+                    </div>
+                    <div class="campos">
+                        <label for="contra">Contraseña</label>
+                        <input id="contra" type="password" placeholder="Contraseña">
+                    </div>
+                    <div class="campos">
+                        <label for="confirmar">Confirmar contraseña</label>
+                        <input id="confirmar" type="password" placeholder="Confirmar contraseña">
+                    </div>
+                </fieldset>
 
+                <!--datos usuarios-->
+                <fieldset>
+                    <div class="campos">
+                        <label for="fecha">Fecha de nacimiento</label>
+                        <input type="date" name="fecha">
+                    </div>
 
-    <form class="formulario">
-        <legend class="leyenda">Registrate gratis para escuchar tu música favorita</legend>
+                    <div class="campos_radio">
+                        <p>Sexo</p>
+                        <section class="opciones_sexo">
+                            <div>
+                                <input type="radio" name="hombre" id="hombre" value="hombre">
+                                <label for="hombre">Hombre</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="hombre" id="mujer" value="mujer">
+                                <label for="mujer">Mujer</label>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="campos">
+                        <label for="username">¿Cómo quieres que te llamemos?</label>
+                        <input id="username" type="text" placeholder="Usuario">
+                    </div>
+                </fieldset>
+            </section>
+            <!-- botones -->
+            <section class="form__buttons">
 
-        <section class="preguntas_form">
-            <!--correo//contras-->
-            <fieldset>
-                <div class="campos">
-                    <label for="correo">Correo electrónico</label>
-                    <input id="correo" type="text" placeholder="Correo electrónico">
+                <div class="container">
+                    <div class="form__button">
+                        <input type="submit" value="Aceptar">
+                    </div>
                 </div>
-                <div class="campos">
-                    <label for="contra">Contraseña</label>
-                    <input id="contra" type="password" placeholder="Contraseña">
-                </div>
-                <div class="campos">
-                    <label for="confirmar">Confirmar contraseña</label>
-                    <input id="confirmar" type="password" placeholder="Confirmar contraseña">
-                </div>
-            </fieldset>
 
-            <!--datos usuarios-->
-            <fieldset>
-                <div class="campos">
-                    <label for="fecha">Fecha de nacimiento</label>
-                    <input type="date" name="fecha">
+                <div class="container">
+                    <div class="form__button">
+                        <input type="submit" value="Cancelar">
+                    </div>
                 </div>
+            </section>
+        </form>
 
-                <div class="campos_radio">
-                    <p>Sexo</p>
-                    <section class="opciones_sexo">
-                        <div>
-                            <input type="radio" name="hombre" id="hombre" value="hombre">
-                            <label for="hombre">Hombre</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="hombre" id="mujer" value="mujer">
-                            <label for="mujer">Mujer</label>
-                        </div>
-                    </section>
-                </div>
-                <div class="campos">
-                    <label for="username">¿Cómo quieres que te llamemos?</label>
-                    <input id="username" type="text" placeholder="Usuario">
-                </div>
-            </fieldset>
-        </section>
-        <!-- botones -->
-        <section class="form__buttons">
-
-            <div class="container">
-                <div class="form__button">
-                    <input type="submit" value="Aceptar">
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="form__button">
-                    <input type="submit" value="Cancelar">
-                </div>
-            </div>
-        </section>
-    </form>
-
-    <input type="checkbox">
-    <label for="mujer">Aceptar términos y condiciones de uso</label>
-</main>
+        <input type="checkbox">
+        <label for="mujer">Aceptar términos y condiciones de uso</label>
+    </main>
 </nav>
