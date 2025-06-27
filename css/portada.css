@@ -1,0 +1,71 @@
+.header {
+    background-color: lightsteelblue;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 0.8px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#eslogan {
+    flex-grow: 1;
+    font-style: italic;
+}
+
+.btn1 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 50px;
+}
+
+.btn1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.separador {
+    display: flex;
+    flex-direction: column;
+    /*Esto los pone uno encima del otro*/
+    gap: 0.1px;
+}
+
+.divider {
+    padding: 1px;
+    text-align: center;
+    font-weight: 1000;
+}
+
+/* Logo */
+.logo {
+    display: table;
+    margin-left: 30px;
+
+    background: #ff80d6;
+    background: linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+    background: -webkit-linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+    background: -moz-linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.logo__text {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 12px;
+    color: #ffff;
+    text-shadow: 0 0 10px #ffffffd0;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: rotate(-10deg);
+}
+
