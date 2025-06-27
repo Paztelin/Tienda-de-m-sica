@@ -1,3 +1,9 @@
+#portada {
+    background: linear-gradient(to right, #020d20,#18095b, #420a42);
+    color: white;
+
+}
+
 .header {
     background-color: rgb(155, 184, 222);
     display: flex;
@@ -5,7 +11,6 @@
     align-items: center;
     justify-content: space-between;
     letter-spacing: 1px;
-    color: white;
     font-family: cursive;
     font-size: 20px;
     font-weight: bold;
@@ -99,7 +104,7 @@
 }
 
 .rotada img {
-    width: 200px;
+    width: 230px;
     transform: rotateY(-30deg) rotateX(5deg) rotateZ(8deg);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     /* sombra para realce */
@@ -149,7 +154,7 @@
 
 #descargar {
     display: flex;
-    gap: 1rem;
+    gap: 10px;
     align-items: center;
 }
 
@@ -160,23 +165,33 @@
 }
 
 .colum img {
-    width: 120px;
+    width: 100px;
 }
 
 .pago1,
 .pago2 {
     background-color: rgb(237, 235, 239);
     border-radius: 10px;
-    padding: 5px;
     display: flex;
-    justify-content: center;/* centra las imágenes horizontalmente */
-    gap: 20px;/* espacio entre imágenes */
+    justify-content: space-evenly;
+    /* centra las imágenes horizontalmente */
+    gap: 1px;
+    /* espacio entre imágenes */
     flex-wrap: wrap;
-    margin-left: 80px;
+    width: 100%;
+    padding: 20px;
 }
 
 .pago1 img,
 .pago2 img {
-    width: 60px;/* ajusta el tamaño si deseas */
-    height: 30px;
+    width: auto;
+    /* ajusta el tamaño si deseas */
+    height: 25px;
+    object-fit: cover;
+
+}
+
+.pago1 img {
+    height: auto;
+    width: 25px;
 }
