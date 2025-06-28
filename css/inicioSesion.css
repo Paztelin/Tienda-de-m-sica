@@ -1,0 +1,32 @@
+.particion{
+    display: flex;
+}
+
+/* Logo */
+.logo3 {
+    display: table;
+    margin: 15% auto;
+
+    background: #ff80d6;
+    background: linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+    background: -webkit-linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+    background: -moz-linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.logo__text3 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 35px;
+    color: #ffff;
+    text-shadow: 0 0 10px #ffffffd0;
+
+    text-transform: uppercase;
+    font-weight: lighter;
+    transform: rotate(-10deg);
+}

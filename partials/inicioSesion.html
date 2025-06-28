@@ -22,17 +22,41 @@
             </div>
         </div>
     </header>
-<main>
-    <div class="particion">
-        <div>
-            <!--LOGO-->
+    <main>
+        <div class="particion">
+            <div>
+                <!--logo-->
+                <div class="logo3">
+                    <h1 class="logo__text3">la nota <br> musical</h1>
+                </div>
+                <form>
+                    <legend>Para continuar, iniciar sesión con <br>tu cuenta personal</legend>
+                    <section>
+                        <fieldset>
+                            <div class="campos_inicio">
+                                <label for="correo">Dirección de correo o nombre de usuario</label>
+                                <input id="direccion_inicio" type="text" placeholder="Correo o usuario">
+                            </div>
+                            <div class="campos_inicio">
+                                <label for="contraseña">Contraseña</label>
+                                <div class="campoContraseña">
+                                    <input id="contraseña" type="password" placeholder="********">
+                                    <input class="verContraseña" type="checkbox"
+                                        onclick="contraseña.type = this.checked ? 'text' : 'password'">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </section>
+                </form>
+                <!--BOTON INICIAR SESION-->
+                <section class="form_btn">
+                    <button type="submit">Iniciar sesión</button>
+                </section>
+                <label>¿Todavía no tienes una cuenta?</label>
+                    <label>Regístrate</label>
+            </div>
+
+            <img src="/img/musica.jpg" alt="">
         </div>
-        
-
-    </div>
-
-    <div class="particion">
-        <img src="/img/musica.jpg" alt="">
-    </div>
-</main>
+    </main>
 </nav>
