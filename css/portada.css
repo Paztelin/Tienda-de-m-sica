@@ -16,8 +16,7 @@
             #5260fe,
             #414bff,
             #4f4b9a,
-            #6c4ade
-    );    
+            #6c4ade);
     display: flex;
     text-align: center;
     align-items: center;
@@ -43,7 +42,7 @@
     width: 50px;
 }
 
-.redes{
+.redes {
     transition: transform 0.2s ease;
     cursor: pointer;
 }
@@ -53,12 +52,30 @@
 }
 
 @keyframes sacudir {
-    0% {transform: rotate(0deg);}
-    20% {transform: rotate(-15deg);}
-    40% {transform: rotate(10deg);}
-    60% {transform: rotate(-10deg);}
-    80% {transform: rotate(5deg);}
-    100% {transform: rotate(0deg);}
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    40% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(-10deg);
+    }
+
+    80% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 
@@ -74,7 +91,7 @@
     color: white;
 }
 
-.btn1 a:hover{
+.btn1 a:hover {
     transition: transform 0.3s;
     transform: scale(1.2);
     color: #333;
@@ -134,17 +151,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 50px;
     perspective: 1000px;
 }
 
 .marco-celular {
     position: relative;
+    width: 200px;
     border-radius: 40px;
-    background: #000;/* carcasa negra */
-    padding: 20px;/* espacio entre imagen y borde */
+    background-color: #000;
+    padding: 15px;
     box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
-    transform: rotateY(-30deg) rotateX(5deg) rotateZ(8deg);
+    transform: rotateY(-30deg) rotateZ(5deg) rotateX(5deg);
     transition: transform 0.4s ease;
 }
 
@@ -153,23 +171,38 @@
 }
 
 #celular {
-    display: block;
-    border-radius: 30px;
-    width: 250px;
+    width: 100%;
     height: auto;
+    border-radius: 30px;
+    display: block;
 }
 
+/* Notch superior */
+.notch {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 20px;
+    background: #111;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+
+/* Reflejo tipo vidrio */
 .reflejo {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border-radius: 40px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.07), transparent 80%);
     pointer-events: none;
 }
+
 
 
 .content h1 {
@@ -193,21 +226,21 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     margin-left: 40px;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 1px;
-    border: 2px solid #333;
+    border: none;
     box-shadow: 0px 5px 10px #eaa7d5;
     border-radius: 5px;
     color: black;
     text-align: center;
     padding: 8px;
 }
-#btn-registro:hover{
-    cursor: pointer;   
+
+#btn-registro:hover {
+    cursor: pointer;
     transition: transform 0.3s;
     transform: scale(1.1);
-    color: #18095b;
-    font-weight: bold;
+    color: #5b0936;
 }
 
 
@@ -226,8 +259,8 @@
             #5260fe,
             #414bff,
             #4f46fa,
-            #715ffb
-    );    margin-top: 10px;
+            #715ffb);
+    margin-top: 10px;
     padding: 10px;
 }
 
@@ -253,9 +286,7 @@
     border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
-    /* centra las imágenes horizontalmente */
     gap: 1px;
-    /* espacio entre imágenes */
     flex-wrap: wrap;
     width: 100%;
     padding: 20px;
@@ -271,5 +302,5 @@
 
 .pago1 img {
     height: auto;
-    width: 25px;
+    width: 35px;
 }

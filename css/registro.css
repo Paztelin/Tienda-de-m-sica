@@ -1,5 +1,7 @@
 nav {
     background-color: rgb(223, 229, 236);
+    letter-spacing: 1px;
+
 }
 
 #encabezado {
@@ -10,7 +12,7 @@ nav {
     letter-spacing: 1px;
     padding: 10px;
     margin-top: 1%;
-    background-color: lightsteelblue;
+    background-color: rgb(187, 194, 205);
 }
 
 #apps2 {
@@ -60,7 +62,7 @@ nav {
 }
 
 .iniciarSsion:hover .texto {
-    color: red;
+    color:#4941db;
     font-weight: bold;
 }
 
@@ -152,7 +154,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 15rem;
-    margin: 4% 10%;
+    margin: 0 10%;
     color: #333;
     font-weight: bold;
 }
@@ -160,6 +162,7 @@ nav {
 .formulario fieldset {
     border: none;
     outline: none;
+    margin-top: 3%;
 }
 
 .campos {
@@ -203,13 +206,46 @@ nav {
     margin-left: 15%;
 }
 
+.opciones_sexo label:hover, input:hover{
+    cursor: pointer;
+}
+
 /************************B O T O N E S************/
 .formulario_btn {
     display: flex;
-    column-gap: 10rem;
+    column-gap: 5rem;
     justify-content: center;
 }
-.btn{
-    border-radius: 10px;
+.container input{
     font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    border: 2px solid #502954 ;
+    background-color:#502954;
+    box-shadow: 0px 5px 10px #9c688b;
+    cursor: pointer;
+    margin-bottom: 50px;
 }
+
+.container input:hover{
+    transition: transform 0.3s;
+    transform: scale(1.1);
+}
+
+.terminos{
+    color: #000;
+    font-size: 18px;
+    margin-left: 3%;
+    padding: 30px;
+}
+.terminos label:hover{
+    color: brown;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
