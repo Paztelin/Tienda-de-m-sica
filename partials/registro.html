@@ -13,7 +13,7 @@
                 </div>
                 <div class="iniciarSsion">
                     <img src="/img/insignia2.png" alt="sesion">
-                    <a class="texto" href="">Iniciar sesión</a>
+                    <a class="texto" href="/partials/inicioSesion.html">Iniciar sesión</a>
                 </div>
             </div>
 
@@ -48,7 +48,11 @@
 
                     <div class="campos">
                         <label for="contra">Contraseña</label>
-                        <input id="contra" type="password" placeholder="Contraseña">
+                        <div class="campoContra">
+                            <input id="contra" type="password" placeholder="Contraseña">
+                            <input class="verContra" type="checkbox"
+                                onclick="contra.type = this.checked ? 'text' : 'password'">
+                        </div>
                     </div>
 
                     <div class="campos">

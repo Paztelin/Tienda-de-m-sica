@@ -1,7 +1,6 @@
 nav {
     background-color: rgb(223, 229, 236);
     letter-spacing: 1px;
-
 }
 
 #encabezado {
@@ -83,29 +82,12 @@ nav {
 }
 
 @keyframes sacudir {
-    0% {
-        transform: rotate(0deg);
+    0% { rotate:0deg;
     }
-
-    20% {
-        transform: rotate(-15deg);
-    }
-
-    40% {
-        transform: rotate(10deg);
-    }
-
-    60% {
-        transform: rotate(-10deg);
-    }
-
-    80% {
-        transform: rotate(5deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
+    25%{rotate: 25deg}
+    50%{rotate:-25deg}
+    75%{rotate:25deg}
+    100%{rotate:-25deg}
 }
 
 /* Logo */
@@ -153,8 +135,8 @@ nav {
 .preguntas_form {
     display: flex;
     align-items: center;
-    gap: 15rem;
-    margin: 0 10%;
+    gap: 10rem;
+    margin: 0 8%;
     color: #333;
     font-weight: bold;
 }
@@ -210,6 +192,21 @@ nav {
     cursor: pointer;
 }
 
+/*CHECKBOX CONTRASEÑA*/
+.campoContra{
+    display: flex;
+    gap: 1rem;
+    margin-left: 38px;
+}
+.campoContra input[type="checkbox"]{
+    background: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
 /************************B O T O N E S************/
 .formulario_btn {
     display: flex;
@@ -246,6 +243,10 @@ nav {
     color: brown;
     cursor: pointer;
     font-weight: bold;
+}
+.terminos input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
 }
 
 
