@@ -14,10 +14,15 @@ nav {
     background-color: rgb(187, 194, 205);
 }
 
+/*logos redes sociales*/
 #apps2 {
     display: flex;
     gap: 3rem;
     align-items: center;
+}
+
+#apps2 img {
+    width: 50px;
 }
 
 #logos {
@@ -31,10 +36,7 @@ nav {
     width: 65px;
 }
 
-#apps2 img {
-    width: 50px;
-}
-
+/*volver*/
 .volver {
     display: flex;
     align-items: center;
@@ -48,6 +50,7 @@ nav {
     font-weight: bold;
 }
 
+/*boton iniciar sesion*/
 .iniciarSsion {
     display: flex;
     align-items: center;
@@ -72,23 +75,7 @@ nav {
     font-weight: bold;
 }
 
-.redes2 {
-    transition: transform 0.2s ease;
-    cursor: pointer;
-}
-
-.redes2:hover {
-    animation: sacudir 0.6s ease-in-out;
-}
-
-@keyframes sacudir {
-    0% { rotate:0deg;
-    }
-    25%{rotate: 25deg}
-    50%{rotate:-25deg}
-    75%{rotate:25deg}
-    100%{rotate:-25deg}
-}
+/****************B L O Q U E 2*****************/
 
 /* Logo */
 .logo2 {
@@ -119,10 +106,6 @@ nav {
     transform: rotate(-10deg);
 }
 
-
-
-
-/****************B L O Q U E 2*****************/
 .leyenda {
     color: #333;
     text-align: center;
@@ -147,6 +130,7 @@ nav {
     margin-top: 3%;
 }
 
+/*campos a rellenar*/
 .campos {
     display: flex;
     flex-direction: column;
@@ -207,12 +191,13 @@ nav {
     margin-top: 15px;
 }
 
-/************************B O T O N E S************/
+/*****************B O T O N E S************/
 .formulario_btn {
     display: flex;
     column-gap: 5rem;
     justify-content: center;
 }
+
 .container input{
     font-size: 20px;
     border-radius: 10px;
@@ -233,6 +218,7 @@ nav {
     transform: scale(1.1);
 }
 
+/*terminos y condiciones*/
 .terminos{
     color: #000;
     font-size: 18px;
@@ -248,5 +234,4 @@ nav {
     width: 15px;
     height: 15px;
 }
-
 

@@ -3,6 +3,7 @@
     color: white;
 }
 
+/*encabezado*/
 .header {
     background-image: linear-gradient(to left bottom,
             #ad4f5f,
@@ -32,6 +33,7 @@
     font-style: italic;
 }
 
+/*logos redes sociales*/
 #apps {
     display: flex;
     gap: 50px;
@@ -52,33 +54,15 @@
 }
 
 @keyframes sacudir {
-
-    0% {
-        transform: rotate(0deg);
-    }
-
-    20% {
-        transform: rotate(-15deg);
-    }
-
-    40% {
-        transform: rotate(10deg);
-    }
-
-    60% {
-        transform: rotate(-10deg);
-    }
-
-    80% {
-        transform: rotate(5deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(-15deg);}
+    40% {transform: rotate(10deg);}
+    60% {transform: rotate(-10deg);}
+    80% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
 }
 
-
+/**********boton INICIAR SESION/REGISTRATE********/
 .btn1 {
     display: flex;
     align-items: center;
@@ -97,9 +81,10 @@
     color: #333;
 }
 
+/*rayas separadoras del encabezado*/
 .separador {
     display: flex;
-    flex-direction: column;/*Esto los pone uno encima del otro*/
+    flex-direction: column;
     gap: 0.1px;
 }
 
@@ -146,7 +131,7 @@
     display: flex;
     gap: 20%;
 }
-
+/*IMAGEN CELULAR*/
 .rotada {
     display: flex;
     justify-content: center;
@@ -204,7 +189,7 @@
 }
 
 
-
+/*texto contenido central*/
 .content h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 40px;
@@ -221,6 +206,7 @@
     font-size: 18px;
 }
 
+/******boton del contenido central*****/
 .content button {
     background-color: #eaa7d5;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -264,6 +250,7 @@
     padding: 10px;
 }
 
+/*Logos play y app store*/
 #descargar {
     display: flex;
     gap: 10px;
@@ -280,6 +267,7 @@
     width: 100px;
 }
 
+/*tipos de pagos footer*/
 .pago1,
 .pago2 {
     background-color: rgb(237, 235, 239);
