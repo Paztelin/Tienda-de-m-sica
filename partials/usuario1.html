@@ -3,35 +3,41 @@
     <title>Portada de usuario1</title>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<nav>
-    <nav class="contenedor-izq">
-        <div class="">
+<div class="grid-container">
+
+    <aside class="contenedor-izq">
+        <div class="img-izq">
             <img src="/img/usuario1_izq.jpeg" alt="imag izq">
         </div>
+    </aside>
 
-        <header class="banner">
-            <!--logo-->
-            <div class="logo4">
-                <h1 class="logo__text4">la nota <br> musical</h1>
-            </div>
+    <header class="banner">
+        <!--logo-->
+        <div class="logo4">
+            <h1 class="logo__text4">la nota <br> musical</h1>
+        </div>
 
-            <div class="bienvenido">
-                <h1>B i e n v e n i d o</h1>
-            </div>
-            <div class="cerrar">
-                <img src="/img/cerrar-sesion.png" alt="cerrar sesion">
-                <a href="/partials/inicioSesion.html"><p>Cerrar sesión</p></a>
-            </div>
-        </header>
-    </nav>
+        <div class="bienvenido">
+            <h1>B i e n v e n i d o</h1>
+        </div>
+
+        <div class="cerrar">
+            <img src="/img/cerrar-sesion.png" alt="cerrar sesion">
+            <a href="/partials/inicioSesion.html">
+                <p>Cerrar sesión</p>
+            </a>
+        </div>
+    </header>
+
 
     <main class="contenido-central">
-        <div>
-            <div>
+        <div class="imagenes">
+            <div class="lukas">
                 <img src="/img/lukas.jpg" alt="Lukas Graham">
                 <h2>LUKAS GRAHAM</h2>
             </div>
-            <div>
+
+            <div class="ava">
                 <img src="/img/ava.jpg" alt="Ava max">
                 <h2>AVA MAX</h2>
             </div>
@@ -42,12 +48,16 @@
         <h3>&copy; La nota musical</h3>
 
         <div>
-            <!--LOGOS SOCIAL MEDIA-->
-            <div>
-                <img src="/img/instagram.png" alt="insta">
-                <img src="/img/facebook.png" alt="fbook">
-                <img src="/img/tik-tok.png" alt="tiktok">
-            </div>
+            <h4>
+                Aviso de privacidad<br>
+                <span class="linea">Términos y condiciones</span>
+            </h4>
+        </div>
+
+        <div class="social"><!--LOGOS SOCIAL MEDIA-->
+            <img class="redes" src="/img/instagram.png" alt="insta">
+            <img class="redes" src="/img/facebook.png" alt="fbook">
+            <img class="redes" src="/img/tik-tok.png" alt="tiktok">
         </div>
     </footer>
-</nav>
+</div>
