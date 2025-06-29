@@ -117,6 +117,15 @@ aside img {
     display: flex;
     gap: 5rem;
 }
+.imagenes img:hover, h2:hover{
+    transition: transform 0.3s;
+    transform: scale(1.1);
+    color: #43759c;
+    cursor: pointer;
+}
+.lukas a{
+    text-decoration: none;
+}
 
 .ava {
     margin-top: 150px;
