@@ -4,22 +4,31 @@
         "aside head"
         "aside content";
     grid-template-columns: 200px 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr;
     min-height: 100vh;
 }
-aside   {grid-area: aside; 
-    background-color:lightblue;}
-header  {grid-area: head; 
-    background-color: lightblue;}
-article {grid-area: content;
-    flex-grow: 1;}
+
+aside {
+    grid-area: aside;
+    background-color: lightblue;
+}
+
+header {
+    grid-area: head;
+    background-color: lightblue;
+}
+
+article {
+    grid-area: content;
+    overflow-y: auto;
+}
 
 
 /******************A S I D E************/
 /* Logo */
 .logo5 {
     display: table;
-    margin:20px 40px 60px;
+    margin: 20px 40px 60px;
 
     background: #ff80d6;
     background: linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
@@ -45,18 +54,19 @@ article {grid-area: content;
     transform: rotate(-10deg);
 }
 
-.botones-side{
-    display:flex;
+.botones-side {
+    display: flex;
     flex-direction: column;
     gap: 2rem;
-    align-items:center;
+    align-items: center;
     cursor: auto;
 }
+
 /*efecto botones*/
-.botones-side button{
+.botones-side button {
     border-radius: 15px;
     color: #fff;
-    background-color:#a26645;
+    background-color: #a26645;
     font-weight: bold;
     font-size: 18px;
     font-family: cursive;
@@ -65,26 +75,26 @@ article {grid-area: content;
     padding: 8px;
     border: 2px solid #a26645;
     box-shadow: 5px 5px 20px 3px #a26645;
-        cursor: pointer;
+    cursor: pointer;
 
-    transition: 
+    transition:
         scale 0.25s ease-in,
         opacity 0.25s ease-in,
         filter 0.25s ease-in;
 
-        &:hover{
-            scale: 1.15;
-        }
+    &:hover {
+        scale: 1.15;
+    }
 }
 
-.botones-side:has(button:hover) button:not(:hover){
+.botones-side:has(button:hover) button:not(:hover) {
     scale: 1;
     opacity: 1;
     filter: blur(4px);
 }
 
 /*pie de pag menu izquierdo*/
-.copyright{
+.copyright {
     margin-top: 5rem;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -92,11 +102,12 @@ article {grid-area: content;
 }
 
 /***********H E A D E R **********/
-.cabeza{
+.cabeza {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.cabeza h1{
+
+.cabeza h1 {
     font-family: cursive;
     font-style: oblique;
     font-weight: bold;
@@ -111,17 +122,19 @@ article {grid-area: content;
     width: 50px;
     margin-left: 50px;
 }
-.back{
+
+.back {
     align-self: center;
 
-    &:hover{
-    cursor: pointer;
-    transition: transform 0.3s;
-    transform: scale(1.2);
+    &:hover {
+        cursor: pointer;
+        transition: transform 0.3s;
+        transform: scale(1.2);
     }
 }
+
 /*icono CERRAR SESION*/
-.img-cerrar{
+.img-cerrar {
     width: 40px;
     height: 40px;
 }
