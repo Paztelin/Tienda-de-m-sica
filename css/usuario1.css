@@ -44,6 +44,13 @@ aside img {
 .cerrar {
     display: flex;
     gap: 0.3rem;
+    align-self: center;
+
+    &:hover{
+        cursor: pointer;
+        transition: transform 0.3s;
+        transform: scale(1.1);
+    }
 }
 
 .cerrar a {
@@ -51,12 +58,6 @@ aside img {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: none;
-}
-
-.cerrar:hover {
-    cursor: pointer;
-    transition: transform 0.3s;
-    transform: scale(1.1);
 }
 
 /*****/

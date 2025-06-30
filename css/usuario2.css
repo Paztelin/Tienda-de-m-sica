@@ -1,0 +1,127 @@
+.contenedor-gral {
+    display: grid;
+    grid-template-areas:
+        "aside head"
+        "aside content";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+aside   {grid-area: aside; 
+    background-color:lightblue;}
+header  {grid-area: head; 
+    background-color: lightblue;}
+article {grid-area: content;
+    flex-grow: 1;}
+
+
+/******************A S I D E************/
+/* Logo */
+.logo5 {
+    display: table;
+    margin:20px 40px 60px;
+
+    background: #ff80d6;
+    background: linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+    background: -webkit-linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+    background: -moz-linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.logo__text5 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 18px;
+    color: #ffff;
+    text-shadow: 0 0 10px #ffffffd0;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: rotate(-10deg);
+}
+
+.botones-side{
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items:center;
+    cursor: auto;
+}
+/*efecto botones*/
+.botones-side button{
+    border-radius: 15px;
+    color: #fff;
+    background-color:#a26645;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: cursive;
+    font-style: italic;
+    width: 150px;
+    padding: 8px;
+    border: 2px solid #a26645;
+    box-shadow: 5px 5px 20px 3px #a26645;
+        cursor: pointer;
+
+    transition: 
+        scale 0.25s ease-in,
+        opacity 0.25s ease-in,
+        filter 0.25s ease-in;
+
+        &:hover{
+            scale: 1.15;
+        }
+}
+
+.botones-side:has(button:hover) button:not(:hover){
+    scale: 1;
+    opacity: 1;
+    filter: blur(4px);
+}
+
+/*pie de pag menu izquierdo*/
+.copyright{
+    margin-top: 5rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/***********H E A D E R **********/
+.cabeza{
+    display: flex;
+    justify-content:space-between;
+}
+.cabeza h1{
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    color: #fff;
+    font-size: 40px;
+    width: 70%;
+    text-align: center;
+}
+
+/*icono VOLVER*/
+.img-back {
+    width: 50px;
+    margin-left: 50px;
+}
+.back{
+    align-self: center;
+
+    &:hover{
+    cursor: pointer;
+    transition: transform 0.3s;
+    transform: scale(1.2);
+    }
+}
+/*icono CERRAR SESION*/
+.img-cerrar{
+    width: 40px;
+    height: 40px;
+}

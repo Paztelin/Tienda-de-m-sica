@@ -47,10 +47,9 @@
 .redes {
     transition: transform 0.2s ease;
     cursor: pointer;
-}
-
-.redes:hover {
-    animation: sacudir 0.6s ease-in-out;
+    &:hover{
+        animation: sacudir 0.6s ease-in-out;
+    }
 }
 
 @keyframes sacudir {
@@ -73,12 +72,12 @@
 .btn1 a {
     text-decoration: none;
     color: white;
-}
 
-.btn1 a:hover {
-    transition: transform 0.3s;
-    transform: scale(1.2);
-    color: #333;
+    &:hover{
+        transition: transform 0.3s;
+        transform: scale(1.2);
+        color: #333;
+    }
 }
 
 /*rayas separadoras del encabezado*/
@@ -149,10 +148,10 @@
     box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
     transform: rotateY(-30deg) rotateZ(5deg) rotateX(5deg);
     transition: transform 0.4s ease;
-}
 
-.marco-celular:hover {
-    transform: rotateY(0deg) rotateZ(0deg) scale(1.05);
+    &:hover{
+        transform: rotateY(0deg) rotateZ(0deg) scale(1.05);
+    }
 }
 
 #celular {
