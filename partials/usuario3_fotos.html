@@ -7,9 +7,35 @@
 <main class="contenedor-gral">
     <aside include-html="./aside-head/aside.html"></aside>
     <header include-html="./aside-head/header.html"></header>
-    
+
     <article>
-        <!-- contenido de la página -->
+        <div class="slider">
+            <input type="radio" name="slide" id="s1" checked>
+            <input type="radio" name="slide" id="s2">
+            <input type="radio" name="slide" id="s3">
+
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://www.rollingstone.com/wp-content/uploads/2018/06/rs-242579-photo-credit-danny-clinch-extralarge_1464120444959.jpg" 
+                    alt="Imagen 1">
+                </div>
+                <div class="slide">
+                    <img src="https://www.billboard.com/wp-content/uploads/media/Lukas-Graham-bb10-beat-2016-billboard-650.jpg?w=650" 
+                    alt="Imagen 2">
+                </div>
+                <div class="slide">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/lukas-graham-entrevista-1578498295.jpg" 
+                    alt="Imagen 3">
+                </div>
+            </div>
+
+            <div class="nav">
+                <label for="s1"></label>
+                <label for="s2"></label>
+                <label for="s3"></label>
+            </div>
+        </div>
+
     </article>
 </main>
 
