@@ -120,7 +120,7 @@ article {
 /*icono VOLVER*/
 .img-back {
     width: 50px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .back {
@@ -129,7 +129,23 @@ article {
     &:hover {
         cursor: pointer;
         transition: transform 0.3s;
-        transform: scale(1.2);
+        transform: scale(1.1);
+    }
+}
+
+/*icono INICIO (casa)*/
+.img-inicio {
+    width: 50px;
+    margin-left: 30px;
+}
+
+.inicio {
+    align-self: center;
+
+    &:hover {
+        cursor: pointer;
+        transition: transform 0.3s;
+        transform: scale(1.1);
     }
 }
 
@@ -137,4 +153,75 @@ article {
 .img-cerrar {
     width: 40px;
     height: 40px;
+}
+
+/*************contenido central**************/
+.contenedor2 {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    position: relative;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#welcome{
+    margin-left: 100px;
+    letter-spacing: 20px;
+    font-size: 50px;
+    color: #333;
+    font-family: monospace;
+    font-style: italic;
+}
+
+.contenedor2 button {
+    margin-right: 50px;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 15px;
+    font-family: cursive;
+    font-weight: bold;
+    color: #fff;
+    background-color: #a26645;
+    border: 2px solid #a26645;
+    box-shadow: 5px 5px 20px 3px #a26645;
+    cursor: pointer;
+}
+
+.contenedor3 {
+    display: flex;
+    gap: 4rem;
+    padding: 0;
+    margin-top: 0;
+}
+
+.contenedor3 h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.div_poster {
+    display: flex;
+    gap: 3rem;
+    margin-left: 50px;
+}
+
+.div_poster img {
+    width: 230px;
+    height: 330px;
+}
+
+.div_poster p {
+    color: brown;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.img-texto img {
+    width: 300px;
+    height: 300px;
 }
