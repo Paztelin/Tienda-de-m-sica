@@ -1,0 +1,280 @@
+body{
+    background: linear-gradient(to right, #020c1e, #020d20, #18095b, #430943);
+    color: white;
+}
+
+/*encabezado*/
+header {
+    background-image: linear-gradient(to left bottom,
+            #ad4f5f,
+            #c777b9,
+            #ba83ca,
+            #8066ac,
+            #9a9ae1,
+            #7159be,
+            #5b61ad,
+            #6996f8,
+            #5260fe,
+            #414bff,
+            #4f4b9a,
+            #6c4ade);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Logo */
+.logo {
+    display: table;
+    margin-left: 30px;
+
+    background: #ff80d6;
+    background: linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+    background: -webkit-linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+    background: -moz-linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.logo__text {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 12px;
+    color: #ffff;
+    text-shadow: 0 0 10px #ffffffd0;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: rotate(-10deg);
+}
+
+#eslogan {
+    font-style: italic;
+    color: white;
+}
+
+/*logos redes sociales*/
+.apps {
+    display: flex;
+    gap: 2rem;
+}
+.redes {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    &:hover{
+        color: aqua;
+        animation: sacudir 0.6s ease-in-out;
+    }
+}
+
+@keyframes sacudir {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(-15deg);}
+    40% {transform: rotate(10deg);}
+    60% {transform: rotate(-10deg);}
+    80% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+/*rayas separadoras del encabezado*/
+.separador {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.divider {
+    padding: 1px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/**********boton INICIAR SESION/REGISTRATE********/
+.btn1 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 50px;
+}
+
+.btn1 a {
+    text-decoration: none;
+    color: white;
+
+    &:hover{
+        transition: transform 0.3s;
+        transform: scale(1.2);
+        color: #333;
+    }
+}
+
+/******************M A I N *******************/
+/*contenido izquierdo*/
+.content {
+    margin-top: 0;
+    display: flex;
+    gap: 20%;
+    margin-left: 40px;
+}
+
+/*texto contenido central*/
+.texto h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-style: italic;
+}
+
+.texto p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.3px;
+    font-weight: 450;
+    font-size: 18px;
+}
+
+/******boton del contenido central*****/
+.texto button {
+    background-color: #eaa7d5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: none;
+    box-shadow: 0px 5px 10px #eaa7d5;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    padding: 8px;
+}
+
+#btn-registro:hover {
+    cursor: pointer;
+    transition: transform 0.3s;
+    transform: scale(1.1);
+    color: #420527;
+}
+
+/*IMAGEN CELULAR*/
+.rotada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    perspective: 1000px;
+}
+.marco-celular {
+    position: relative;
+    width: 200px;
+    border-radius: 40px;
+    background-color: #000;
+    padding: 15px;
+    box-shadow: 0 25px 50px 30px rgba(0, 0, 0, 0.5);
+    transform: rotateY(-30deg) rotateZ(5deg) rotateX(5deg);
+    transition: transform 0.4s ease;
+
+    &:hover{
+        transform: rotateY(0deg) rotateZ(0deg) scale(1.05);
+    }
+}
+#celular {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    display: block;
+}
+/* Notch superior */
+.notch {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 20px;
+    background: #111;
+    border-radius: 10px;
+    z-index: 10;
+}
+/* Reflejo tipo vidrio */
+.reflejo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.07), transparent 80%);
+    pointer-events: none;
+}
+/******************************/
+footer {
+    background-image: linear-gradient(to left bottom,
+            #d16b7c,
+            #c777b9,
+            #ba83ca,
+            #aa8fd8,
+            #9a9ae1,
+            #a18aec,
+            #7981f4,
+            #6996f8,
+            #5260fe,
+            #414bff,
+            #4f46fa,
+            #715ffb);
+    border-radius: 5px;
+}
+
+/*Logos play y app store*/
+.descargar {
+    display: flex;
+    align-items: center;
+}
+
+.colum {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.colum img {
+    width: 100px;
+}
+
+/*tipos de pagos footer*/
+.pago1, .pago2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: rgb(215, 214, 218);
+    border-radius: 10px;
+    width: 600px;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 2.3rem;
+    height: 45px;
+}
+.pago2 img {
+    width: auto;
+    height: 25px;
+    object-fit: contain;
+
+}
+
+.pago1 img {
+    width: 50px;
+    height: 45px;
+    object-fit: contain;
+    border-radius: 5px;
+}
