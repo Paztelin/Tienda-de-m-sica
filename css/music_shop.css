@@ -145,13 +145,13 @@ header {
 
 /******boton del contenido central*****/
 .texto button {
-    background-color: #eaa7d5;
+    background-color:#ff54aa;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 20px;
     letter-spacing: 1px;
     border: none;
-    box-shadow: 0px 5px 10px #eaa7d5;
+    box-shadow: 0px 2px 20px #f0edef;
     border-radius: 5px;
     color: black;
     text-align: center;
@@ -162,7 +162,7 @@ header {
     cursor: pointer;
     transition: transform 0.3s;
     transform: scale(1.1);
-    color: #420527;
+    color: white;
 }
 
 /*IMAGEN CELULAR*/
