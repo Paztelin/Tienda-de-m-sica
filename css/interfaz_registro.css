@@ -13,6 +13,7 @@ body {
             #41dfff,
             #46eefa,
             #5ffbf1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav {
@@ -23,13 +24,35 @@ nav {
     height: 4rem;
 }
 
-.volver {
-    margin-left: 50px;
 
-    &:hover svg {
-        color: white;
-    }
+/* Logo */
+.logo {
+    display: table;
+
+    background: #ff80d6;
+    background: linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+    background: -webkit-linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+    background: -moz-linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
+
+.logo__text {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 10px;
+    color: #ffff;
+    text-shadow: 0 0 10px #ffffffd0;
+
+    text-transform: uppercase;
+    font-weight: lighter;
+    transform: rotate(-10deg);
+}
+
 
 .apps {
     margin-right: 50px;
@@ -39,7 +62,6 @@ nav a {
     text-decoration: none;
     color: #000;
     font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 
@@ -73,29 +95,12 @@ nav a {
 }
 
 @keyframes sacudir {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    20% {
-        transform: rotate(-15deg);
-    }
-
-    40% {
-        transform: rotate(10deg);
-    }
-
-    60% {
-        transform: rotate(-10deg);
-    }
-
-    80% {
-        transform: rotate(5deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(-15deg);}
+    40% {transform: rotate(10deg);}
+    60% {transform: rotate(-10deg);}
+    80% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
 }
 
 
@@ -103,43 +108,15 @@ nav a {
 main {
     display: flex;
     justify-content: center;
+        margin-top: 3rem;
+
 }
 
-/* Logo */
-.logo {
-    display: table;
-    margin: 2% auto;
-
-    background: #ff80d6;
-    background: linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
-    background: -webkit-linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
-    background: -moz-linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
-
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-.logo__text {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 25px;
-    color: #ffff;
-    text-shadow: 0 0 10px #ffffffd0;
-
-    text-transform: uppercase;
-    font-weight: lighter;
-    transform: rotate(-10deg);
-}
 
 .left {
     font-size: 20px;
     text-align: center;
-    font-family: cursive;
     font-style: italic;
-    margin-top: 5rem;
     color: white;
 }
 
@@ -179,6 +156,8 @@ form legend {
     text-align: center;
     border-radius: 5px;
     border: 1.5px solid gray;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 /*campo contraseña*/
@@ -206,6 +185,8 @@ form legend {
     border: 1px solid #ff54aa;
     color: white;
     cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 
     &:hover {
         transition: transform 0.4s;
@@ -247,6 +228,8 @@ form legend {
     font-size: 16px;
     cursor: pointer;
     gap: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 
     &:hover {
         transition: transform 0.5s;
