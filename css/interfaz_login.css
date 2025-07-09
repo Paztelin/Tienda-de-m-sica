@@ -1,10 +1,23 @@
 body {
     letter-spacing: 1px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: linear-gradient(to left bottom,
+            #d16ba5,
+            #c777b9,
+            #ba83ca,
+            #aa8fd8,
+            #9a9ae1,
+            #8aa7ec,
+            #79b3f4,
+            #69bff8,
+            #52cffe,
+            #41dfff,
+            #46eefa,
+            #5ffbf1);
 }
 
 nav {
-    margin: 1.5rem;
+    margin: 2rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,4 +101,155 @@ nav a {
     60% {transform: rotate(-10deg);}
     80% {transform: rotate(5deg);}
     100% {transform: rotate(0deg);}
+}
+
+/*************  M  A  I  N  **************/
+main {
+    display: flex;
+    margin: 3rem 8rem 0;
+    gap: 5rem;
+
+}
+
+/*lado izquierdo*/
+.form2 legend {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 0 3rem;
+    font-style: italic;
+}
+
+.form2 {
+    margin: 1rem 5rem 0;
+}
+
+.form2 fieldset {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.campos_inicio label {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    margin: 0 0.5rem;
+}
+
+/*icono dentro del input*/
+.icono-input {
+    position: relative;
+    width: 100%;
+}
+
+.icono-input input {
+    margin: 1rem 0;
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    text-align: left;
+    padding: 0 50px;
+    border: 1.5px solid gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+}
+
+.icono-izquierda,
+.icono-derecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: gray;
+}
+
+.icono-izquierda {
+    left: 1rem;
+}
+
+.icono-derecha {
+    right: 3rem;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+/*boton inicio sesion*/
+.form_btn button {
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 500px;
+    height: 50px;
+    background-color: #ff54aa;
+    border: 1px solid #ff54aa;
+    box-shadow: 10px 10px 40px 1px #ff54aa;
+    color: white;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1rem;
+
+    &:hover {
+        transition: transform 0.4s;
+        transform: scale(1.1);
+    }
+}
+
+/*PREGUNTA SI TIENE CUENTA O NO*/
+.noCuenta{
+    font-size: 20px;
+    color:rgb(18, 65, 137);
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.noCuenta a{
+    color: #000;
+    font-style: normal;
+    cursor: pointer;
+}
+
+/***************lado derecho***************/
+.right-side {
+    margin-top: 4rem;
+}
+.right-side legend{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*botones lado derecho*/
+.btn-opciones {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 3rem 0;
+    padding: 0 3rem;
+    gap: 1rem;
+    border: 1.5px solid gray;
+    border-radius: 50px;
+    width: 400px;
+    height: 50px;
+    background: white;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    &:hover {
+        transition: transform 0.5s;
+        transform: scale(1.1);
+    }
+}
+
+.btn-opciones img {
+    width: 30px;
+    height: 30px;
 }
