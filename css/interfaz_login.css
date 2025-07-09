@@ -1,0 +1,91 @@
+body {
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    margin: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+
+/* Logo */
+.logo {
+    display: table;
+
+    background: #ff80d6;
+    background: linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+    background: -webkit-linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+    background: -moz-linear-gradient(19deg, #ff80d6 0%, #ff54aa 80%);
+
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.logo__text {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 12px;
+    color: #ffff;
+    text-shadow: 0 0 10px #ffffffd0;
+
+    text-transform: uppercase;
+    font-weight: lighter;
+    transform: rotate(-10deg);
+}
+
+
+.apps {
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.logIn,
+.install {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+
+    &:hover a,
+    &:hover svg {
+        color: white;
+    }
+}
+
+/*****redes sociales*****/
+.apps {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.redes {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+        animation: sacudir 0.6s ease-in-out;
+    }
+}
+
+@keyframes sacudir {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(-15deg);}
+    40% {transform: rotate(10deg);}
+    60% {transform: rotate(-10deg);}
+    80% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
