@@ -159,6 +159,6 @@ footer h3 {
 .social {
     margin-right: 50px;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
 }
