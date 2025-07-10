@@ -278,3 +278,87 @@ footer {
     object-fit: contain;
     border-radius: 5px;
 }
+
+
+/*web responsive*/
+/* =================== RESPONSIVE =================== */
+    @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    #eslogan {
+        font-size: 16px;
+    }
+
+    .apps {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn1 {
+        flex-direction: column;
+        gap: 15px;
+        padding-right: 0;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .texto h3 {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+
+    .texto p {
+        font-size: 16px;
+    }
+
+    .rotada {
+        padding: 0;
+        transform: none;
+    }
+
+    .marco-celular {
+        transform: none;
+        width: 180px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    footer .descargar {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .pago1, .pago2 {
+        width: 90%;
+        gap: 1rem;
+        padding: 10px;
+    }
+
+    .colum {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .colum img {
+        width: 120px;
+    }
+    }
