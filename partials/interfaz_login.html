@@ -80,7 +80,7 @@
 
     <main>
         <section> <!---lado izquierdo-->
-            <form class="form2">
+            <form class="form2" method="">
                 <legend>Para continuar, inicia sesión con <br>tu cuenta personal</legend>
                 <section>
                     <fieldset>
@@ -95,7 +95,7 @@
                                     <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
                                     <rect x="2" y="4" width="20" height="16" rx="2" />
                                 </svg>
-                                <input type="text" name="correo" id="correo" placeholder="Correo electrónico o usuario" required>
+                                <input type="text" name="correo" id="correo" placeholder="usuario@ejemplo.com" required>
                             </div>
                         </div>
 
@@ -113,7 +113,7 @@
                                 </svg>
 
                                 <!-- Input de contraseña -->
-                                <input id="contra" type="password" placeholder="Contraseña" required>
+                                <input id="contra" type="password" placeholder="********" required>
 
                                 <!-- Ícono derecho: ver/ocultar -->
                                 <svg class="icono-derecha" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -138,7 +138,7 @@
                     <!--BOTON INICIAR SESION-->
                     <section class="form_btn">
                         <a href="/partials/usuario1.html">
-                            <button type="submit">
+                            <button type="submit" name="iniciar-sesion">
                                 Iniciar sesión
                             </button>
                         </a>
@@ -146,9 +146,7 @@
 
                     <section class="noCuenta">
                         <p>¿Todavía no tienes una cuenta?</p>
-                        <label>
                             <a href="/partials/interfaz_registro.html">Regístrate</a>
-                        </label>
                     </section>
                     </div>
                 </section>
@@ -159,17 +157,17 @@
         <section class="right-side"> <!---lado derecho-->
             <legend>O inicia sesión con</legend>
 
-            <button class="btn-opciones">
+            <button class="btn-opciones" type="submit">
                 <img src="/img/facebook.png" alt="iconoGoogle">
                 Acceder con Facebook
             </button>
 
-            <button class="btn-opciones">
+            <button class="btn-opciones" type="submit">
                 <img src="/img/google.png" alt="iconoGoogle">
                 Acceder con Google
             </button>
 
-            <button class="btn-opciones">
+            <button class="btn-opciones" type="submit">
                 <img src="/img/apple2.png" alt="iconoApple">
                 Acceder con Apple
             </button>
